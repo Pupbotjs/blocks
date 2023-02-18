@@ -1,0 +1,27 @@
+{
+    "name": "Pupbot 插件图形化",
+    "short_name": "Pupbot 插件图形化",
+    "start_url": "/index.html",
+    "id": "/index.html",
+    "display": "standalone",
+    "background_color": "#6d50f0",
+    "theme_color": "#6d50f0",
+    "mode": "standalone",
+    "scope": "/",
+    "description": "让Pupbot没有难做的插件",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "./static/img/pwa.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+        },
+        {
+            "src": "./static/img/apple-touch-icon.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable"
+        }
+    ]
+}
