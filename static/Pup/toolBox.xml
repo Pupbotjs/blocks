@@ -240,9 +240,37 @@ TIP
 		</block>
 		<block type="pup_export">
 		</block>
+		
+	</category>
+	<category name="Plugin" css-icon="waddle-search" css-class="waddle-antd waddle-testing">
 		<block type="pup_onmounted">
 		</block>
 		<block type="pup_onunmounted">
+		</block>
+		<block type="pup_onmessage">
+		</block>
+		<block type="pup_ongroupmessage">
+		</block>
+		<block type="pup_onprivatemessage">
+		</block>
+		<block type="pup_mainadmin">
+		</block>
+		<block type="pup_admins">
+		</block>
+	</category>
+	<category name="Client" css-icon="waddle-search" css-class="waddle-antd waddle-testing">
+		
+		<block type="pup_sendprivatemessage">
+		</block>
+		<block type="pup_sendgroupmessage">
+		</block>
+	</category>
+	<category name="Event" css-icon="waddle-search" css-class="waddle-antd waddle-testing">
+		<block type="pup_reply">
+		</block>
+		<block type="pup_sender">
+		</block>
+		<block type="pup_raw_message">
 		</block>
 	</category>
 	<!--<category name="字典" css-icon="waddle-dict" css-class="waddle-dict">

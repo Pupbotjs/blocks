@@ -118,7 +118,7 @@ var to_light = function () {
 	document.documentElement.style.setProperty('--arrow-color', '#6d50f0');
 	document.documentElement.style.setProperty('--arrow-background', '#efebff');
 	document.documentElement.style.setProperty('--arrow-hover-background', '#d7cff7');
-	document.getElementById('about-img').src = "./static/img/logo/logo-purple-full.png.svg"
+	document.getElementById('about-img').src = "./static/img/logo/logo-purple-full.png"
 
 
 	document.documentElement.style.setProperty('--settings-button-color', 'rgba(105, 85, 231, 0.8)');

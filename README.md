@@ -25,4 +25,4 @@ Pupbot 插件图形化 是由 Coconut Studio 基于 Waddle 开发的 Pupbot插�
 - README.md：28行
 - sw.js：1行
 
-<div class="waddle-version-bot">v0.2.1</div>
+<div class="waddle-version-bot">v0.3.0</div>
