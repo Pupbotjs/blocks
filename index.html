@@ -17,30 +17,12 @@
     <script>
         // 控制台输出
         window.reast = false;
-        var version = 'v0.3.0' //版本号
+        var version = 'v0.3.4' //版本号
         console.log("嘿，欢迎使用 Pupbot 插件图形化!")
         console.log("本工具基于Waddle开发!")
     </script>
     <script>
-        // service worker
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('./sw.js')
-            });
-            let refreshing = false
-            navigator.serviceWorker.addEventListener('controllerchange', () => {
-                if (refreshing) {
-                    return
-                }
-                refreshing = true;
-                swal("有新版本更新，请问是否需要刷新", {buttons: ["取消", "确认"],})
-                    .then((value) => {
-                        if (value) {
-                            window.location.reload();
-                        }
-                    })
-            });
-        }
+        
 
         var logo = document.createElement('link');
         logo.setAttribute("type", 'image/x-icon')
@@ -835,12 +817,11 @@
                     <span class="sord">空白作品</span>
                 </div>
     
-                <div class="card" id="card" onclick='swal("还没有呢～")'><span class="sord">Hello World!</span>
-                </div>
                 
-                <div class="card" id="card" style="display: none;"
-                     onclick="newsth.style.display = 'none';upload('./static/Pup/tutorials/voteLine.waddle')">
-                    <span class="sord">[可见控件]<br>投票条</span>
+                
+                <div class="card" id="card"
+                     onclick="newsth.style.display = 'none';upload('./static/Pup/tutorials/xgb.pup')">
+                    <span class="sord">主管理员的小跟班</span>
                 </div>
             </div>
         </div>
@@ -905,7 +886,7 @@
                 <p style="margin-block-start: 1em;">Google Blockly</p>
                 <p style="margin-block-start: 1em;">IconPark</p>
                 <p style="margin-block-start: 1em;">Waddle编辑器的贡献者们</p>
-                <p style="margin-block-start: 1em;">CoCo编辑器</p>
+                <p style="margin-block-start: 1em;">Waddle编辑器</p>
             </div>
         </div>
     </div>
@@ -1099,10 +1080,10 @@
 
 <script src="./static/Pup/blocks/what.js"></script>
 <script src="./static/Pup/generators/javascript/what.js"></script>
+-->
 
-<!--字典控件积木
-<script src="./static/Pup/blocks/dictionaries.js"></script>
-<script src="./static/Pup/generators/javascript/dictionaries.js"></script>
+<script src="./static/Pup/blocks/dict.js"></script>
+<script src="./static/Pup/generators/javascript/dict.js"></script>
 
 <!--antdesign控件积木
 <script src="./static/Pup/blocks/antd.js"></script>
@@ -1114,18 +1095,11 @@
 <!--sweetalert-->
 <script src="./static/js/sweetalert.min.js"></script>
 
-<!--可见控件预览-->
-<script src="./static/js//widget-preview.js"></script>
-
-<!-- 导入React，用于可见控件预览 -->
-<script src="./static/js/react.development.js"></script>
-<script src="./static/js/react-dom.development.js"></script>
-
 <!--彩蛋定义-->
 <script>
     function east_chk() {
         if (document.cookie.includes("easter")) {
-            swal("彩蛋", "恭喜，你貌似触发了彩蛋!（但是没有做）", "success")
+            window.location.href="http://114514.cn/"
 
         } else {
             document.cookie = "easter=1";

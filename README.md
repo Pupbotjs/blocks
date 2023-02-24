@@ -11,7 +11,7 @@ Pupbot 插件图形化 是由 Coconut Studio 基于 Waddle 开发的 Pupbot插�
 
 直接访问
 
-- 开发版：https://pup.coco-central.cn (网站暂未上线)
+- 开发版：https://pup.coco-central.cn
 
 ### 反馈
 
@@ -23,6 +23,5 @@ Pupbot 插件图形化 是由 Coconut Studio 基于 Waddle 开发的 Pupbot插�
 
 - index.html：20行
 - README.md：28行
-- sw.js：1行
 
-<div class="waddle-version-bot">v0.3.0</div>
+<div class="waddle-version-bot">v0.3.4</div>
