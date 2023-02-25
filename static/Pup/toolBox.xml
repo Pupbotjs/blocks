@@ -273,40 +273,7 @@ TIP
 		<block type="pup_raw_message">
 		</block>
 	</category>
-	<!--<category name="字典" css-icon="waddle-dict" css-class="waddle-dict">
-		<block type="dict_pair">
-		</block>
-		<block type="dict_create_with">
-			<mutation items="1">
-			</mutation>
-		</block>
-		<block type="dict_set">
-			<value name="KEY">
-				<block type="variables_get">
-				</block>
-			</value>
-		</block>
-		<block type="dict_get">
-			<value name="KEY">
-				<block type="variables_get">
-				</block>
-			</value>
-		</block>
-		<block type="dict_del">
-			<value name="KEY">
-				<block type="variables_get">
-				</block>
-			</value>
-		</block>
-		<block type="dict_data">
-		</block>
-		<block type="dict_has_key">
-			<value name="KEY">
-				<block type="variables_get">
-				</block>
-			</value>
-		</block>
-	</category>-->
+
 	
 	<!--
 	<category name="DOM" css-icon="waddle-dom" css-class="waddle-dom">
@@ -493,6 +460,41 @@ TIP
 		</block>
 		<block type="segment_face">
 		</block>
+	</category>
+	<category name="字典" css-icon="waddle-dict" css-class="waddle-dict">
+<button text="实验性功能提示" callbackKey="betawarning">
+		</button>
+		<block type="dict_pair">
+		</block>
+		<block type="dict_create_with">
+			<mutation items="1">
+			</mutation>
+		</block><!--
+		<block type="dict_set">
+			<value name="KEY">
+				<block type="variables_get">
+				</block>
+			</value>
+		</block>
+		<block type="dict_get">
+			<value name="KEY">
+				<block type="variables_get">
+				</block>
+			</value>
+		</block>
+		<block type="dict_del">
+			<value name="KEY">
+				<block type="variables_get">
+				</block>
+			</value>
+		</block>-->
+		<!--
+		<block type="dict_has_key">
+			<value name="KEY">
+				<block type="variables_get">
+				</block>
+			</value>
+		</block>-->
 	</category>
 	<!--
 	<category name="utils" css-icon="waddle-utils" css-class="waddle-utils" custom="UTILS_GAME">

@@ -1,0 +1,18 @@
+<root><body><blocks><xml xmlns="https://developers.google.com/blockly/xml"><block type="pup_init" id=".1m[f,TAxdf?eC9Vu+-*" x="-354" y="-879"><next><block type="pup_new" id="ikwcP5(yYuD${lCr3w%^"><value name="name"><block type="text" id="Gkz(;Zy$DQ%D5ld{%5$h"><field name="TEXT">xiaogenban</field></block></value><value name="version"><block type="text" id="~20Os-;CxJML*B!#VV|2"><field name="TEXT">1.0.0</field></block></value><next><block type="pup_onmounted" id="9qU._lahji$4N(fgQhGm"><statement name="action"><block type="pup_sendprivatemessage" id="[P//5K=KM:6%FPiaP:A!"><value name="text"><block type="text" id="U%PH0!NXyt!k|mn62!cj"><field name="TEXT">欢迎使用本插件！</field></block></value><value name="qq"><block type="pup_mainadmin" id="kso2XCocYPOkK3dfnz:2"></block></value><next><block type="pup_onmessage" id="jB!)dx@Y?^.H1}$][#g="><statement name="action"><block type="controls_if" id="@|I!xgycep?ATzV!SYd("><value name="IF0"><block type="logic_compare" id="|S$E_[iTCmP}//qbW9kS"><field name="OP">EQ</field><value name="A"><block type="pup_sender" id="zd,VaEF6u9({:50Wky]^"><field name="type">user_id</field></block></value><value name="B"><block type="pup_mainadmin" id="-Kfho@/E+oNTJ}^U4#h^"></block></value></block></value><statement name="DO0"><block type="pup_sendgroupmessage" id="#=bXuc}!,^q4w[fP*(4|"><value name="text"><block type="text" id="pTO16{a@cNAD}OrPby=$"><field name="TEXT">喵～</field></block></value><value name="qq"><block type="pup_sender" id=",:uvQdHm{U-@TZ]~_i+P"><field name="type">group_id</field></block></value></block></statement></block></statement></block></next></block></statement><next><block type="pup_onunmounted" id="6Uf^DuFSHUb(+_4e|bGI"><statement name="action"><block type="pup_sendprivatemessage" id=";jzo)-$9qXxTJ5bLiBb%"><value name="text"><block type="text" id="jb-_OYWf_fwv_I;;i@Sg"><field name="TEXT">再见！</field></block></value><value name="qq"><block type="pup_mainadmin" id="nI5h@Ia`1rHKlq!w__T*"></block></value></block></statement><next><block type="pup_export" id="=[c+@jVJ5@w!2E-ibQ8{"></block></next></block></next></block></next></block></next></block></xml></blocks><js>const { PupPlugin } = require('@pupbot/core');
+const plugin = new PupPlugin('xiaogenban', '1.0.0');
+plugin.onMounted((bot) => {
+  bot.sendPrivateMsg((bot.mainAdmin),'欢迎使用本插件！')
+  plugin.onMessage((event) => {
+    if ((event.sender.user_id) == (bot.mainAdmin)) {
+      bot.sendGroupMsg((event.sender.group_id),'喵～')
+    }
+
+  })
+
+})
+plugin.onUnmounted((bot) => {
+  bot.sendPrivateMsg((bot.mainAdmin),'再见！')
+
+})
+module.exports = { plugin };
+</js></body></root>

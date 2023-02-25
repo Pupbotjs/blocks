@@ -12,7 +12,7 @@ let js_save = function () {
         downa.href = url;
         let name = "";
         if (name === "") {
-            name = "我的插件";
+            name = "main";
         }
         
             downa.download = name + ".js";
